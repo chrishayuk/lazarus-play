@@ -197,3 +197,141 @@ if query_type == 'global':
 - Pattern dictionary generalization: hand-craft per domain? Learn from sparse_index?
 - Could an LLM scan sparse_index.json at prefill time to identify event keywords?
 - Phase constraints (window ranges) assume known document structure. How to auto-detect?
+
+---
+
+## Experiment 4 — Tension Probe as Event Detector
+
+**Experiment ID:** c8b14b3c (steps exp4_*)
+**Date:** 2026-03-18
+**Verdict: NEGATIVE — tension probe fails as event detector.**
+
+### 4a — Probe Training
+
+Generation-mode probe trained on 6 tense + 6 calm windows (same architecture as
+tonal probe: read excerpt + "Rate stakes 1-5" + generate 20 tokens + extract L26).
+
+Layers scanned: L7, L14, L20, L26, L28, L33.
+
+| Layer | Train acc | Val acc |
+|-------|-----------|---------|
+| L7  | 100% | 23.3% |
+| L14 | 100% | 16.7% |
+| L20 | 100% | 16.7% |
+| L26 | 100% | 23.3% |
+| L28 | 100% | 13.3% |
+| L33 | 100% | 20.0% |
+
+**Val accuracy at ALL layers is BELOW CHANCE (50%).**
+The probe memorises training data but the dark space judgment signal does not
+generalise. No layer produces a usable tension discriminant.
+
+Compare to tonal probe (humor): L26 val = 87.5-100%. The tension concept does not
+produce a clean separable signal at any layer.
+
+### 4b — Explicit Rating Test (Clean Text, 60 Tokens)
+
+To test whether the model's evaluative judgment (not just the probe) discriminates
+events from non-events, explicit 1-5 ratings were collected on paraphrased window text:
+
+| Window | Type | Content | Rating | Reasoning correct? |
+|--------|------|---------|--------|--------------------|
+| W1 (launch) | **Event 5/5** | Staging, ignition, thrust good | **5** | YES — correct |
+| W373 (post-landing) | **Event 5/5** | "We're breathing again" | **5** | NO — hallucinated O2 crisis |
+| W443 (first step) | **Event 5/5** | One small step | **4** | NO — fixates on surface instability |
+| W370 (landing) | **Event 5/5** | CONTACT LIGHT, ENGINE STOP | **4** | NO — reads ACA as malfunction |
+| W364 (1202+GO) | **Event 4/5** | GO for descent, 1202 | **4** | Partial — misses 1202 significance |
+| W723 (splashdown) | **Event 5/5** | Splashdown error 15nm | **4** | NO — calls 15nm error "dangerous" |
+| W596 (TEI PAD) | **Event 3/5** | TEI numbers readback | **4** | NO — reads numbers as critical op |
+| W72 (checklist) | Non-event | Delete RCS JET SELECT line | **3** | Partial — overestimates but lowest score |
+| W667 (crew status) | Non-event | Sleep report, water dump 45% | **4** | NO — calls water dump hazardous |
+| W651 (news) | Non-event | Babe Ruth, All-Star game | **4** | NO — "distracts mission control" |
+| W500 (goodnight) | Non-event | Good night, Neil | **4** | NO — reads "ignition" in message |
+| NASA news | Non-event | TV pictures, 1972 workshop | **4** | NO — "shifts competitive space race" |
+
+**Event mean: 4.29. Non-event mean: 3.80. Delta: 0.49 rating points.**
+
+The tension discrimination is near-zero. Both clusters peak at 4/5. Only 2 moments
+score 5/5 (launch, post-landing celebration) vs 0 non-events at 5/5. But 5/15 event
+windows are also 4/5, indistinguishable from routine ops.
+
+**Wrong reasoning rate: 6/7 event windows explained incorrectly.** The model arrives
+at the right score (4/5) but for the wrong reasons:
+- First step: fixates on unstable surface risking a fall, not historic significance
+- Landing: reads normal post-landing procedures as system malfunctions
+- Splashdown: calls a 15nm error (very accurate) dangerous
+- Post-landing relief: hallucinates an oxygen crisis that didn't happen
+
+### 4c — Why the Tension Probe Fails
+
+**Root cause: Space mission context inflation.**
+
+The 4B model assigns a systematic floor of ~4/5 to ALL space mission content because
+it knows Apollo 11 was a historic mission. It cannot separate *content importance*
+from *mission context importance*. Even baseball news relayed to the crew gets 4/5
+("creates public distraction for mission control").
+
+This is the same failure mode as the stride misinterpretation (ABORT STAGE RESET =
+abort, cabin pressure going to zero = crisis), generalised: the model treats ALL
+mission content as high-stakes. There is no low-stakes floor to anchor the tension
+signal. The tonal probe worked because "fuel cell purge" is unambiguously 1/5 amusing
+— that anchor point doesn't exist for tension in a space mission context.
+
+**Why the tonal probe works but tension doesn't:**
+
+| Property | Tonal (humor) | Tension (stakes) |
+|----------|--------------|-----------------|
+| Class floor | Fuel purge = 1/5 amusing (clear anchor) | Crew status = 4/5 tension (no floor) |
+| Class ceiling | Porridge contest = 5/5 amusing | Launch = 5/5 tension |
+| Dynamic range | 1-5 (full range) | 3-5 (compressed) |
+| Probe val acc | 87.5-100% | 13-23% (below chance) |
+| Useful for routing | YES | NO |
+
+### 4d — Final Verdict on Combined Architecture
+
+The tension probe **does not improve** the event-dense routing architecture:
+
+| Method | Event recall | Forward passes | Result |
+|--------|-------------|----------------|--------|
+| Regex phrases | 12/15 | 0 | **Best** |
+| Tension probe (all 725 windows) | ~2/15 usable | 725 | WORSE |
+| Tension probe (coarse filter to 50) | ~2/15 usable | 50 | WORSE |
+
+The tension probe would require ~50+ forward passes to re-rank candidates and
+still only reliably identifies 2 events (launch, post-landing celebration) that
+are already found by regex ("staging", "breathing again"). Net gain: zero.
+
+**The event-dense routing architecture is complete:**
+
+```
+Query → global detected
+  ↓
+Regex phrase matching on decoded windows (zero forward passes, ~50ms)
+  ↓
+Greedy temporal spread (k=10-15, min_distance=30)
+  ↓
+Generate with standard prompt (operational language warning: marginal)
+  ↓
+Quality: 4/5 (vs stride 1.5-3/5)
+```
+
+No tension probe needed. No compass variance needed. No surprise signal needed.
+The dark space judgment circuit does not encode mission-criticality in a way
+that separates events from routine ops for this model at this size.
+
+### 4e — What Would Make a Tension Probe Work
+
+A reliable tension probe would require:
+1. **Domain-calibrated training:** Examples where routine ops are explicitly
+   labelled 1-2/5 (fuel cell purge = 1/5, news readback = 1/5, checklist = 2/5)
+   by someone with Apollo operations knowledge — not the model's own judgment
+2. **Contrastive pairs from same mission phase:** Landing checklist (routine) vs
+   landing confirmation (event) — forces the model to distinguish within-phase
+3. **Or a larger model (70B+):** Better operational domain knowledge might allow
+   genuine discrimination between routine and critical ops
+4. **Or supervised labels:** If ground-truth event windows are already known,
+   use them directly (which is what the regex approach does)
+
+The fundamental limit is the model's evaluative ceiling on operational content:
+it cannot reliably know what a "GO/NO-GO" decision is vs what a "GO for water dump"
+is without extensive mission operations training data.
