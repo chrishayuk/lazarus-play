@@ -231,3 +231,71 @@ With K-vector routing adding 512 bytes × 3,625 facts ≈ 1.8 MB, the total inde
 - **What is the minimum Q·K routing accuracy required?** Even a 5% miss rate would cause catastrophic errors. The routing must be near-perfect.
 - **Can donor ambiguity be eliminated?** The Kor/Thess leakage from the Nexaris context (5.15% Thess) is a real issue. Cleaner donor prompts (mention only the target fact, not the full context) might help.
 - **Multi-token answers?** The 12-byte scheme handles only single-token answers. Multi-token would require N sequential injections at different generation steps.
+
+---
+
+## Session 2 Addendum — 2026-03-18 (Experiment 2178e184)
+
+### New finding 1: Bare query residual is orthogonal to ALL answer token embeddings
+
+The L30 residual of any bare query ("X was founded in the city of") is approximately
+**orthogonal to every answer token embedding direction** (measured angles: 88.97°–91.76°,
+cosines −0.031 to +0.018 across Volt, Cren, Thess, Kor, Sol, Len).
+
+**Implication:** The injection formula simplifies:
+
+```
+R_patched = R_bare + (c - dot(R_bare, e)) * e
+          ≈ R_bare + c * e          [since dot(R_bare, e) ≈ 0]
+```
+
+The injection is purely **additive** — it adds a fresh c*e signal into a direction that
+was previously empty. There is nothing to "subtract" or "correct." The 12-byte coefficient
+c IS the full magnitude of the answer signal, not a differential.
+
+**For inject-all:** N sequential 1D injections are mathematically additive with near-zero
+interaction (since e_i ⊥ e_j AND e_i ⊥ R_bare). The residual after N injections is:
+
+```
+R_N ≈ R_bare + c_1*e_1 + c_2*e_2 + ... + c_N*e_N
+```
+
+Yet inject-all still fails. The failure is entirely in L31-L33 amplification: the model
+picks the **largest-c direction** regardless of entity identity in the query. No address bus.
+
+### New finding 2: Two donor failure modes for inject-all
+
+Testing shared multi-fact donors confirmed both failure modes:
+
+**Failure mode A — list-continuation**: Entity-specific donor ending with the queried
+entity (e.g., "...Z=Volt, N=Cren, A=Thess, Zarkov founded in...") causes the donor to
+enter list-continuation mode, predicting the next list item (" Nex" at 81.6%) instead
+of the correct fact. Wrong signals contaminate the injected subspace.
+
+**Failure mode B — null signal**: Neutral donor ("...The entity was founded in...") has
+no net city signal in the subspace (donor_subspace_fraction ≈ recipient_subspace_fraction,
+KL(recipient→injected) ≈ 0.04). Nothing is injected.
+
+### New finding 3: Donor design rule (rediscovered + clarified)
+
+A donor ending ON the answer token (e.g., "Zarkov...city of **Volt**") gives
+donor_subspace_fraction ≈ 0.0004 — nearly identical to the bare recipient. The model at
+that position is computing what comes AFTER Volt, not encoding Volt as an answer.
+
+The correct donor: **"The city is Volt. Zarkov was founded in the city of"**
+Here Volt appears EARLIER in context, is absorbed through L30 attention, and the last
+position ("of") has the Volt signal strongly encoded: donor P(Volt) = 78.9%.
+
+### New 6-entity inject-matched baseline (N=6, all independent)
+
+| Entity | Answer | Token ID | P(correct) |
+|---|---|---|---|
+| Zarkov | Volt | 89711 | 90.9% |
+| Nexaris | Cren | 227157 | 99.999% |
+| Aldric | Thess | 113059 | 99.996% |
+| Velarian | Kor | 27978 | 99.857% |
+| Dravik | Sol | 5718 | 93.0% |
+| Pyris | Len | 26403 | 98.2% |
+
+**Accuracy is N-independent as predicted.** Each injection uses its own matched donor.
+Accuracy depends only on token type (novel > common), not on index size.
