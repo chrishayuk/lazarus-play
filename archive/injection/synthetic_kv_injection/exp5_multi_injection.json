@@ -1,0 +1,120 @@
+{
+  "description": "11 K/V entries injected (1 Volt + 10 noise)",
+  "P_Volt": 0.000526,
+  "top_predictions": [
+    {
+      "token": " New",
+      "token_id": 1799,
+      "probability": 0.060547
+    },
+    {
+      "token": " Pittsburgh",
+      "token_id": 29918,
+      "probability": 0.034424
+    },
+    {
+      "token": " Zapor",
+      "token_id": 231788,
+      "probability": 0.034424
+    },
+    {
+      "token": " Chicago",
+      "token_id": 10561,
+      "probability": 0.032471
+    },
+    {
+      "token": " Vol",
+      "token_id": 6285,
+      "probability": 0.032471
+    },
+    {
+      "token": " Detroit",
+      "token_id": 26217,
+      "probability": 0.026855
+    },
+    {
+      "token": " Z",
+      "token_id": 1491,
+      "probability": 0.026855
+    },
+    {
+      "token": " St",
+      "token_id": 842,
+      "probability": 0.020874
+    },
+    {
+      "token": " Moscow",
+      "token_id": 18749,
+      "probability": 0.019653
+    },
+    {
+      "token": " Novosibirsk",
+      "token_id": 173767,
+      "probability": 0.016357
+    }
+  ],
+  "H4_attn_to_volt": 0.380859,
+  "H4_attn_to_BOS": 0.589844,
+  "noise_entries": [
+    {
+      "position": 2,
+      "token": "ark",
+      "H4_attention": 0.006561
+    },
+    {
+      "position": 7,
+      "token": " in",
+      "H4_attention": 2.7e-05
+    },
+    {
+      "position": 8,
+      "token": " the",
+      "H4_attention": 0.000154
+    },
+    {
+      "position": 9,
+      "token": " mid",
+      "H4_attention": 0.001373
+    },
+    {
+      "position": 15,
+      "token": "s",
+      "H4_attention": 7.2e-05
+    },
+    {
+      "position": 16,
+      "token": " as",
+      "H4_attention": 2e-06
+    },
+    {
+      "position": 18,
+      "token": " pioneering",
+      "H4_attention": 0.000404
+    },
+    {
+      "position": 42,
+      "token": "s",
+      "H4_attention": 0.000359
+    },
+    {
+      "position": 45,
+      "token": ".",
+      "H4_attention": 0.000418
+    },
+    {
+      "position": 49,
+      "token": "ov",
+      "H4_attention": 0.000317
+    }
+  ],
+  "all_heads_attn_to_volt": {
+    "H0": 0.015991,
+    "H1": 0.026855,
+    "H2": 0.085449,
+    "H3": 0.081055,
+    "H4": 0.380859,
+    "H5": 0.253906,
+    "H6": 2.6e-05,
+    "H7": 0.001694
+  }
+}

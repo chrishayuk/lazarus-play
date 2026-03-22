@@ -1,0 +1,15 @@
+{
+  "description": "RoPE position mismatch analysis for K injection",
+  "QK_scores": {
+    "a_original_rope_doc_pos_39": 13.625,
+    "b_pre_rope_content_only": 13.5,
+    "c_reroped_at_S_query": 13.5,
+    "d_reroped_at_pos_0": 13.5
+  },
+  "P_Volt": {
+    "b_pre_rope": 0.000462,
+    "c_reroped_at_S_query": 0.000744,
+    "d_reroped_at_pos_0": 0.000462
+  },
+  "S_query": 11
+}

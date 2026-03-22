@@ -1,0 +1,140 @@
+[
+  {
+    "query": "Zarkov Industries was founded in the city of",
+    "target": "Volt",
+    "target_id": 89711,
+    "P_target": 1e-06,
+    "top_predictions": [
+      {
+        "token": " New",
+        "token_id": 1799,
+        "probability": 0.069824
+      },
+      {
+        "token": " Chicago",
+        "token_id": 10561,
+        "probability": 0.042236
+      },
+      {
+        "token": " Pittsburgh",
+        "token_id": 29918,
+        "probability": 0.031006
+      },
+      {
+        "token": " St",
+        "token_id": 842,
+        "probability": 0.031006
+      },
+      {
+        "token": " Z",
+        "token_id": 1491,
+        "probability": 0.025635
+      }
+    ],
+    "best_attended_idx": 3,
+    "best_attended_pos": 22,
+    "best_attended_token": " filtration",
+    "inject_attention_H4": [
+      0.004974,
+      0.000248,
+      0.000117,
+      0.01355,
+      4e-06,
+      8e-06,
+      0.000479,
+      0.000839
+    ]
+  },
+  {
+    "query": "The headquarters of Zarkov Industries was built on a",
+    "target": "former",
+    "target_id": 4937,
+    "P_target": 0.03418,
+    "top_predictions": [
+      {
+        "token": " remote",
+        "token_id": 10883,
+        "probability": 0.208984
+      },
+      {
+        "token": " small",
+        "token_id": 1944,
+        "probability": 0.111816
+      },
+      {
+        "token": " massive",
+        "token_id": 12566,
+        "probability": 0.038574
+      },
+      {
+        "token": " foundation",
+        "token_id": 13916,
+        "probability": 0.036377
+      },
+      {
+        "token": " former",
+        "token_id": 4937,
+        "probability": 0.03418
+      }
+    ],
+    "best_attended_idx": 3,
+    "best_attended_pos": 22,
+    "best_attended_token": " filtration",
+    "inject_attention_H4": [
+      0.001305,
+      9e-06,
+      5.7e-05,
+      0.009094,
+      5e-06,
+      6e-06,
+      0.000465,
+      6.5e-05
+    ]
+  },
+  {
+    "query": "Zarkov Industries was established in the",
+    "target": "mid",
+    "target_id": 5453,
+    "P_target": 0.175781,
+    "top_predictions": [
+      {
+        "token": " late",
+        "token_id": 5226,
+        "probability": 0.226562
+      },
+      {
+        "token": " early",
+        "token_id": 3649,
+        "probability": 0.226562
+      },
+      {
+        "token": " mid",
+        "token_id": 5453,
+        "probability": 0.175781
+      },
+      {
+        "token": " ",
+        "token_id": 236743,
+        "probability": 0.175781
+      },
+      {
+        "token": " year",
+        "token_id": 1051,
+        "probability": 0.094238
+      }
+    ],
+    "best_attended_idx": 2,
+    "best_attended_pos": 15,
+    "best_attended_token": "s",
+    "inject_attention_H4": [
+      0.002945,
+      0.000481,
+      0.005493,
+      0.004852,
+      4e-06,
+      3e-06,
+      0.002029,
+      0.000257
+    ]
+  }
+]

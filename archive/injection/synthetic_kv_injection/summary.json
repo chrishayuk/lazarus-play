@@ -1,0 +1,427 @@
+{
+  "exp2": {
+    "description": "Extracted K/V at L29 for Volt position and 10 noise positions",
+    "volt_position": 39,
+    "k_volt_shape": [
+      1,
+      4,
+      1,
+      256
+    ],
+    "v_volt_shape": [
+      1,
+      4,
+      1,
+      256
+    ],
+    "norms": {
+      "kv_head_0": {
+        "k_norm": 59.75,
+        "v_norm": 18.5
+      },
+      "kv_head_1": {
+        "k_norm": 51.5,
+        "v_norm": 19.375
+      },
+      "kv_head_2": {
+        "k_norm": 61.0,
+        "v_norm": 20.625
+      },
+      "kv_head_3": {
+        "k_norm": 43.75,
+        "v_norm": 7.34375
+      }
+    },
+    "noise_positions": [
+      2,
+      7,
+      8,
+      9,
+      15,
+      16,
+      18,
+      42,
+      45,
+      49
+    ],
+    "noise_tokens": [
+      "ark",
+      " in",
+      " the",
+      " mid",
+      "s",
+      " as",
+      " pioneering",
+      "s",
+      ".",
+      "ov"
+    ]
+  },
+  "exp4": {
+    "description": "Single K/V entry injected at L29 (all KV heads)",
+    "P_Volt": 0.000553,
+    "top_predictions": [
+      {
+        "token": " New",
+        "token_id": 1799,
+        "probability": 0.060059
+      },
+      {
+        "token": " Z",
+        "token_id": 1491,
+        "probability": 0.036377
+      },
+      {
+        "token": " Vol",
+        "token_id": 6285,
+        "probability": 0.036377
+      },
+      {
+        "token": " Zapor",
+        "token_id": 231788,
+        "probability": 0.032227
+      },
+      {
+        "token": " Pittsburgh",
+        "token_id": 29918,
+        "probability": 0.030273
+      },
+      {
+        "token": " Chicago",
+        "token_id": 10561,
+        "probability": 0.028442
+      },
+      {
+        "token": " Detroit",
+        "token_id": 26217,
+        "probability": 0.026611
+      },
+      {
+        "token": " St",
+        "token_id": 842,
+        "probability": 0.02356
+      },
+      {
+        "token": " Moscow",
+        "token_id": 18749,
+        "probability": 0.019531
+      },
+      {
+        "token": " Novosibirsk",
+        "token_id": 173767,
+        "probability": 0.016235
+      }
+    ],
+    "per_head_attention": {
+      "H0": {
+        "attn_to_injected": 0.016235,
+        "attn_to_BOS": 0.941406
+      },
+      "H1": {
+        "attn_to_injected": 0.027222,
+        "attn_to_BOS": 0.960938
+      },
+      "H2": {
+        "attn_to_injected": 0.087402,
+        "attn_to_BOS": 0.882812
+      },
+      "H3": {
+        "attn_to_injected": 0.083008,
+        "attn_to_BOS": 0.894531
+      },
+      "H4": {
+        "attn_to_injected": 0.382812,
+        "attn_to_BOS": 0.59375
+      },
+      "H5": {
+        "attn_to_injected": 0.263672,
+        "attn_to_BOS": 0.671875
+      },
+      "H6": {
+        "attn_to_injected": 2.6e-05,
+        "attn_to_BOS": 1.0
+      },
+      "H7": {
+        "attn_to_injected": 0.00174,
+        "attn_to_BOS": 0.957031
+      }
+    }
+  },
+  "exp5": {
+    "description": "11 K/V entries injected (1 Volt + 10 noise)",
+    "P_Volt": 0.000526,
+    "top_predictions": [
+      {
+        "token": " New",
+        "token_id": 1799,
+        "probability": 0.060547
+      },
+      {
+        "token": " Pittsburgh",
+        "token_id": 29918,
+        "probability": 0.034424
+      },
+      {
+        "token": " Zapor",
+        "token_id": 231788,
+        "probability": 0.034424
+      },
+      {
+        "token": " Chicago",
+        "token_id": 10561,
+        "probability": 0.032471
+      },
+      {
+        "token": " Vol",
+        "token_id": 6285,
+        "probability": 0.032471
+      },
+      {
+        "token": " Detroit",
+        "token_id": 26217,
+        "probability": 0.026855
+      },
+      {
+        "token": " Z",
+        "token_id": 1491,
+        "probability": 0.026855
+      },
+      {
+        "token": " St",
+        "token_id": 842,
+        "probability": 0.020874
+      },
+      {
+        "token": " Moscow",
+        "token_id": 18749,
+        "probability": 0.019653
+      },
+      {
+        "token": " Novosibirsk",
+        "token_id": 173767,
+        "probability": 0.016357
+      }
+    ],
+    "H4_attn_to_volt": 0.380859,
+    "H4_attn_to_BOS": 0.589844,
+    "noise_entries": [
+      {
+        "position": 2,
+        "token": "ark",
+        "H4_attention": 0.006561
+      },
+      {
+        "position": 7,
+        "token": " in",
+        "H4_attention": 2.7e-05
+      },
+      {
+        "position": 8,
+        "token": " the",
+        "H4_attention": 0.000154
+      },
+      {
+        "position": 9,
+        "token": " mid",
+        "H4_attention": 0.001373
+      },
+      {
+        "position": 15,
+        "token": "s",
+        "H4_attention": 7.2e-05
+      },
+      {
+        "position": 16,
+        "token": " as",
+        "H4_attention": 2e-06
+      },
+      {
+        "position": 18,
+        "token": " pioneering",
+        "H4_attention": 0.000404
+      },
+      {
+        "position": 42,
+        "token": "s",
+        "H4_attention": 0.000359
+      },
+      {
+        "position": 45,
+        "token": ".",
+        "H4_attention": 0.000418
+      },
+      {
+        "position": 49,
+        "token": "ov",
+        "H4_attention": 0.000317
+      }
+    ],
+    "all_heads_attn_to_volt": {
+      "H0": 0.015991,
+      "H1": 0.026855,
+      "H2": 0.085449,
+      "H3": 0.081055,
+      "H4": 0.380859,
+      "H5": 0.253906,
+      "H6": 2.6e-05,
+      "H7": 0.001694
+    }
+  },
+  "exp6": {
+    "description": "RoPE position mismatch analysis for K injection",
+    "QK_scores": {
+      "a_original_rope_doc_pos_39": 13.625,
+      "b_pre_rope_content_only": 13.5,
+      "c_reroped_at_S_query": 13.5,
+      "d_reroped_at_pos_0": 13.5
+    },
+    "P_Volt": {
+      "b_pre_rope": 0.000462,
+      "c_reroped_at_S_query": 0.000744,
+      "d_reroped_at_pos_0": 0.000462
+    },
+    "S_query": 11
+  },
+  "exp7": {
+    "queries": [
+      {
+        "query": "Zarkov Industries was founded in the city of",
+        "target": "Volt",
+        "target_id": 89711,
+        "P_target": 1e-06,
+        "top_predictions": [
+          {
+            "token": " New",
+            "token_id": 1799,
+            "probability": 0.069824
+          },
+          {
+            "token": " Chicago",
+            "token_id": 10561,
+            "probability": 0.042236
+          },
+          {
+            "token": " Pittsburgh",
+            "token_id": 29918,
+            "probability": 0.031006
+          },
+          {
+            "token": " St",
+            "token_id": 842,
+            "probability": 0.031006
+          },
+          {
+            "token": " Z",
+            "token_id": 1491,
+            "probability": 0.025635
+          }
+        ],
+        "best_attended_idx": 3,
+        "best_attended_pos": 22,
+        "best_attended_token": " filtration",
+        "inject_attention_H4": [
+          0.004974,
+          0.000248,
+          0.000117,
+          0.01355,
+          4e-06,
+          8e-06,
+          0.000479,
+          0.000839
+        ]
+      },
+      {
+        "query": "The headquarters of Zarkov Industries was built on a",
+        "target": "former",
+        "target_id": 4937,
+        "P_target": 0.03418,
+        "top_predictions": [
+          {
+            "token": " remote",
+            "token_id": 10883,
+            "probability": 0.208984
+          },
+          {
+            "token": " small",
+            "token_id": 1944,
+            "probability": 0.111816
+          },
+          {
+            "token": " massive",
+            "token_id": 12566,
+            "probability": 0.038574
+          },
+          {
+            "token": " foundation",
+            "token_id": 13916,
+            "probability": 0.036377
+          },
+          {
+            "token": " former",
+            "token_id": 4937,
+            "probability": 0.03418
+          }
+        ],
+        "best_attended_idx": 3,
+        "best_attended_pos": 22,
+        "best_attended_token": " filtration",
+        "inject_attention_H4": [
+          0.001305,
+          9e-06,
+          5.7e-05,
+          0.009094,
+          5e-06,
+          6e-06,
+          0.000465,
+          6.5e-05
+        ]
+      },
+      {
+        "query": "Zarkov Industries was established in the",
+        "target": "mid",
+        "target_id": 5453,
+        "P_target": 0.175781,
+        "top_predictions": [
+          {
+            "token": " late",
+            "token_id": 5226,
+            "probability": 0.226562
+          },
+          {
+            "token": " early",
+            "token_id": 3649,
+            "probability": 0.226562
+          },
+          {
+            "token": " mid",
+            "token_id": 5453,
+            "probability": 0.175781
+          },
+          {
+            "token": " ",
+            "token_id": 236743,
+            "probability": 0.175781
+          },
+          {
+            "token": " year",
+            "token_id": 1051,
+            "probability": 0.094238
+          }
+        ],
+        "best_attended_idx": 2,
+        "best_attended_pos": 15,
+        "best_attended_token": "s",
+        "inject_attention_H4": [
+          0.002945,
+          0.000481,
+          0.005493,
+          0.004852,
+          4e-06,
+          3e-06,
+          0.002029,
+          0.000257
+        ]
+      }
+    ]
+  }
+}

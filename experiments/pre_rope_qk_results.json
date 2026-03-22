@@ -1,0 +1,193 @@
+{
+  "exp1_k_quality": {
+    "mean_intra": 0.7880167563756307,
+    "mean_inter": 0.7986528873443604,
+    "ratio": 0.9866824109231028
+  },
+  "exp2_n3": {
+    "zarkov": {
+      "correct": true,
+      "margin": 1.0,
+      "winner": "zarkov"
+    },
+    "strand": {
+      "correct": false,
+      "margin": 1.0,
+      "winner": "zarkov"
+    },
+    "kelvara": {
+      "correct": false,
+      "margin": 1.0128205128205128,
+      "winner": "zarkov"
+    }
+  },
+  "exp3_n50": {
+    "porridge": {
+      "target": "W170",
+      "rank": 23,
+      "top1": "W660",
+      "score": 177.0,
+      "top5": [
+        [
+          "W660",
+          204.0
+        ],
+        [
+          "W180",
+          195.0
+        ],
+        [
+          "W345",
+          193.0
+        ],
+        [
+          "W300",
+          192.0
+        ],
+        [
+          "W240",
+          190.0
+        ]
+      ]
+    },
+    "baseball": {
+      "target": "W169",
+      "rank": 20,
+      "top1": "W195",
+      "score": 151.0,
+      "top5": [
+        [
+          "W195",
+          166.0
+        ],
+        [
+          "W630",
+          165.0
+        ],
+        [
+          "W060",
+          163.0
+        ],
+        [
+          "W180",
+          160.0
+        ],
+        [
+          "W285",
+          160.0
+        ]
+      ]
+    },
+    "landing": {
+      "target": "W370",
+      "rank": 9,
+      "top1": "W180",
+      "score": 186.0,
+      "top5": [
+        [
+          "W180",
+          196.0
+        ],
+        [
+          "W060",
+          195.0
+        ],
+        [
+          "W375",
+          193.0
+        ],
+        [
+          "W345",
+          190.0
+        ],
+        [
+          "W660",
+          190.0
+        ]
+      ]
+    },
+    "weather": {
+      "target": "W169",
+      "rank": 46,
+      "top1": "W195",
+      "score": 135.0,
+      "top5": [
+        [
+          "W195",
+          158.0
+        ],
+        [
+          "W060",
+          156.0
+        ],
+        [
+          "W630",
+          156.0
+        ],
+        [
+          "W180",
+          154.0
+        ],
+        [
+          "W285",
+          154.0
+        ]
+      ]
+    },
+    "news": {
+      "target": "W169",
+      "rank": 48,
+      "top1": "W150",
+      "score": 181.0,
+      "top5": [
+        [
+          "W150",
+          225.0
+        ],
+        [
+          "W170",
+          224.0
+        ],
+        [
+          "W480",
+          224.0
+        ],
+        [
+          "W660",
+          218.0
+        ],
+        [
+          "W585",
+          215.0
+        ]
+      ]
+    }
+  },
+  "exp4_multihead": {
+    "porridge": {
+      "target": "W170",
+      "h4_rank": 23,
+      "multi_rank": 19
+    },
+    "baseball": {
+      "target": "W169",
+      "h4_rank": 20,
+      "multi_rank": 5
+    },
+    "landing": {
+      "target": "W370",
+      "h4_rank": 9,
+      "multi_rank": 20
+    },
+    "weather": {
+      "target": "W169",
+      "h4_rank": 46,
+      "multi_rank": 1
+    },
+    "news": {
+      "target": "W169",
+      "h4_rank": 48,
+      "multi_rank": 37
+    }
+  }
+}

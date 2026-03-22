@@ -1,0 +1,306 @@
+{
+  "experiment": "attention-argmax-injection",
+  "exp1": {
+    "results": {
+      "Zarkov city": {
+        "winning_idx": 21,
+        "winning_store": 0,
+        "winning_store_name": "A (Zarkov/Voltara)",
+        "correct_store": 0,
+        "correct": true,
+        "winning_weight": 0.09033203125,
+        "margin_over_2nd": 0.05908203125,
+        "top1_concentration": 0.09033203125,
+        "P_Volt": 1.0,
+        "P_Cast": 7.792703114739563e-20,
+        "top_prediction": "Volt",
+        "top_prediction_prob": 1.0,
+        "top_10_entries": [
+          {
+            "rank": 1,
+            "global_idx": 21,
+            "store": 0,
+            "weight": 0.09033203125
+          },
+          {
+            "rank": 2,
+            "global_idx": 51,
+            "store": 1,
+            "weight": 0.03125
+          },
+          {
+            "rank": 3,
+            "global_idx": 32,
+            "store": 0,
+            "weight": 0.0260009765625
+          },
+          {
+            "rank": 4,
+            "global_idx": 24,
+            "store": 0,
+            "weight": 0.021484375
+          },
+          {
+            "rank": 5,
+            "global_idx": 68,
+            "store": 1,
+            "weight": 0.0201416015625
+          },
+          {
+            "rank": 6,
+            "global_idx": 7,
+            "store": 0,
+            "weight": 0.017822265625
+          },
+          {
+            "rank": 7,
+            "global_idx": 41,
+            "store": 1,
+            "weight": 0.0167236328125
+          },
+          {
+            "rank": 8,
+            "global_idx": 25,
+            "store": 0,
+            "weight": 0.0147705078125
+          },
+          {
+            "rank": 9,
+            "global_idx": 45,
+            "store": 1,
+            "weight": 0.0130615234375
+          },
+          {
+            "rank": 10,
+            "global_idx": 1,
+            "store": 0,
+            "weight": 0.0108642578125
+          }
+        ],
+        "head_winners": [
+          {
+            "head": 0,
+            "winning_store": 0,
+            "weight": 0.0150146484375
+          },
+          {
+            "head": 1,
+            "winning_store": 0,
+            "weight": 0.019287109375
+          },
+          {
+            "head": 2,
+            "winning_store": 0,
+            "weight": 0.0244140625
+          },
+          {
+            "head": 3,
+            "winning_store": 1,
+            "weight": 0.035888671875
+          },
+          {
+            "head": 4,
+            "winning_store": 0,
+            "weight": 0.09033203125
+          },
+          {
+            "head": 5,
+            "winning_store": 0,
+            "weight": 0.07421875
+          },
+          {
+            "head": 6,
+            "winning_store": 1,
+            "weight": 0.0002288818359375
+          },
+          {
+            "head": 7,
+            "winning_store": 0,
+            "weight": 0.00098419189453125
+          }
+        ],
+        "top5_from_A": 3,
+        "top5_from_B": 2
+      },
+      "Director surname": {
+        "winning_idx": 68,
+        "winning_store": 1,
+        "winning_store_name": "B (Strand/Castellan)",
+        "correct_store": 1,
+        "correct": true,
+        "winning_weight": 0.047607421875,
+        "margin_over_2nd": 0.005615234375,
+        "top1_concentration": 0.047607421875,
+        "P_Volt": 2.9335764912906377e-30,
+        "P_Cast": 1.0,
+        "top_prediction": "Cast",
+        "top_prediction_prob": 1.0,
+        "top_10_entries": [
+          {
+            "rank": 1,
+            "global_idx": 68,
+            "store": 1,
+            "weight": 0.047607421875
+          },
+          {
+            "rank": 2,
+            "global_idx": 21,
+            "store": 0,
+            "weight": 0.0419921875
+          },
+          {
+            "rank": 3,
+            "global_idx": 41,
+            "store": 1,
+            "weight": 0.03955078125
+          },
+          {
+            "rank": 4,
+            "global_idx": 24,
+            "store": 0,
+            "weight": 0.03955078125
+          },
+          {
+            "rank": 5,
+            "global_idx": 51,
+            "store": 1,
+            "weight": 0.027099609375
+          },
+          {
+            "rank": 6,
+            "global_idx": 40,
+            "store": 1,
+            "weight": 0.0255126953125
+          },
+          {
+            "rank": 7,
+            "global_idx": 25,
+            "store": 0,
+            "weight": 0.0198974609375
+          },
+          {
+            "rank": 8,
+            "global_idx": 0,
+            "store": 0,
+            "weight": 0.0186767578125
+          },
+          {
+            "rank": 9,
+            "global_idx": 58,
+            "store": 1,
+            "weight": 0.0186767578125
+          },
+          {
+            "rank": 10,
+            "global_idx": 32,
+            "store": 0,
+            "weight": 0.01446533203125
+          }
+        ],
+        "head_winners": [
+          {
+            "head": 0,
+            "winning_store": 0,
+            "weight": 0.0179443359375
+          },
+          {
+            "head": 1,
+            "winning_store": 0,
+            "weight": 0.0189208984375
+          },
+          {
+            "head": 2,
+            "winning_store": 1,
+            "weight": 0.03857421875
+          },
+          {
+            "head": 3,
+            "winning_store": 1,
+            "weight": 0.0576171875
+          },
+          {
+            "head": 4,
+            "winning_store": 1,
+            "weight": 0.047607421875
+          },
+          {
+            "head": 5,
+            "winning_store": 1,
+            "weight": 0.043212890625
+          },
+          {
+            "head": 6,
+            "winning_store": 0,
+            "weight": 0.0002765655517578125
+          },
+          {
+            "head": 7,
+            "winning_store": 0,
+            "weight": 0.00069427490234375
+          }
+        ],
+        "top5_from_A": 2,
+        "top5_from_B": 3
+      }
+    },
+    "pass": true
+  },
+  "exp2": {
+    "results": {
+      "Zarkov city": {
+        "winning_store": 0,
+        "correct_store": 0,
+        "correct": true,
+        "winning_weight": 0.08056640625
+      },
+      "Director surname": {
+        "winning_store": 2,
+        "correct_store": 1,
+        "correct": false,
+        "winning_weight": 0.044921875
+      },
+      "Teleportation town": {
+        "winning_store": 0,
+        "correct_store": 2,
+        "correct": false,
+        "winning_weight": 0.16015625
+      }
+    },
+    "pass": false
+  },
+  "exp3": {
+    "results": {
+      "Zarkov city": {
+        "top1_store": 0,
+        "top1_weight": 0.09033203125,
+        "top2_store": 1,
+        "top2_weight": 0.03125,
+        "margin": 0.05908203125,
+        "ratio": 2.890625,
+        "concentration": 0.2566460804962222,
+        "top5_from_correct": 3,
+        "store_a_total": 0.22189098596572876,
+        "store_b_total": 0.1300802230834961
+      },
+      "Director surname": {
+        "top1_store": 1,
+        "top1_weight": 0.047607421875,
+        "top2_store": 0,
+        "top2_weight": 0.0419921875,
+        "margin": 0.005615234375,
+        "ratio": 1.1337209302325582,
+        "concentration": 0.11256596190328814,
+        "top5_from_correct": 3,
+        "store_a_total": 0.1974385380744934,
+        "store_b_total": 0.22549057006835938
+      }
+    }
+  },
+  "stores": {
+    "A_entries": 40,
+    "B_entries": 32,
+    "C_entries": 44,
+    "total_2store": 72,
+    "total_3store": 116
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "description": "Single K/V entry injected at L29 (all KV heads)",
+  "P_Volt": 0.000553,
+  "top_predictions": [
+    {
+      "token": " New",
+      "token_id": 1799,
+      "probability": 0.060059
+    },
+    {
+      "token": " Z",
+      "token_id": 1491,
+      "probability": 0.036377
+    },
+    {
+      "token": " Vol",
+      "token_id": 6285,
+      "probability": 0.036377
+    },
+    {
+      "token": " Zapor",
+      "token_id": 231788,
+      "probability": 0.032227
+    },
+    {
+      "token": " Pittsburgh",
+      "token_id": 29918,
+      "probability": 0.030273
+    },
+    {
+      "token": " Chicago",
+      "token_id": 10561,
+      "probability": 0.028442
+    },
+    {
+      "token": " Detroit",
+      "token_id": 26217,
+      "probability": 0.026611
+    },
+    {
+      "token": " St",
+      "token_id": 842,
+      "probability": 0.02356
+    },
+    {
+      "token": " Moscow",
+      "token_id": 18749,
+      "probability": 0.019531
+    },
+    {
+      "token": " Novosibirsk",
+      "token_id": 173767,
+      "probability": 0.016235
+    }
+  ],
+  "per_head_attention": {
+    "H0": {
+      "attn_to_injected": 0.016235,
+      "attn_to_BOS": 0.941406
+    },
+    "H1": {
+      "attn_to_injected": 0.027222,
+      "attn_to_BOS": 0.960938
+    },
+    "H2": {
+      "attn_to_injected": 0.087402,
+      "attn_to_BOS": 0.882812
+    },
+    "H3": {
+      "attn_to_injected": 0.083008,
+      "attn_to_BOS": 0.894531
+    },
+    "H4": {
+      "attn_to_injected": 0.382812,
+      "attn_to_BOS": 0.59375
+    },
+    "H5": {
+      "attn_to_injected": 0.263672,
+      "attn_to_BOS": 0.671875
+    },
+    "H6": {
+      "attn_to_injected": 2.6e-05,
+      "attn_to_BOS": 1.0
+    },
+    "H7": {
+      "attn_to_injected": 0.00174,
+      "attn_to_BOS": 0.957031
+    }
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "exp1": {
+    "landing_W370": {
+      "query": "landing",
+      "window": "W370",
+      "is_target": true,
+      "per_position_cosines": [
+        0.9185938239097595,
+        0.9257283806800842,
+        0.9214907884597778,
+        0.9251610636711121,
+        0.9204449653625488,
+        0.9151439070701599,
+        0.9283168315887451,
+        0.9282348155975342
+      ],
+      "best_position_cosine": 0.9283168315887451,
+      "best_position_idx": 6,
+      "best_position_token": "6",
+      "mean_position_cosine": 0.9228893518447876,
+      "last_position_cosine": 0.9314829707145691,
+      "position_labels": [
+        "Ll",
+        "MODE",
+        "\u2581AUTO",
+        "i",
+        "\u2581h",
+        "F",
+        "6",
+        "8"
+      ],
+      "positions": [
+        85,
+        216,
+        220,
+        223,
+        263,
+        399,
+        414,
+        478
+      ]
+    },
+    "landing_W170": {
+      "query": "landing",
+      "window": "W170",
+      "is_target": false,
+      "per_position_cosines": [
+        0.9231065511703491,
+        0.917975664138794,
+        0.9247976541519165,
+        0.9294981360435486,
+        0.9278610348701477,
+        0.9199188351631165,
+        0.9223645329475403,
+        0.9241881370544434
+      ],
+      "best_position_cosine": 0.9294981360435486,
+      "best_position_idx": 3,
+      "best_position_token": "0",
+      "mean_position_cosine": 0.9237138032913208,
+      "last_position_cosine": 0.9348313212394714,
+      "position_labels": [
+        "d",
+        "\u2581Ald",
+        "contest",
+        "0",
+        "}_",
+        "\u2581m",
+        "Page",
+        "\u2581_"
+      ],
+      "positions": [
+        213,
+        217,
+        220,
+        235,
+        328,
+        378,
+        400,
+        411
+      ]
+    },
+    "landing_W169": {
+      "query": "landing",
+      "window": "W169",
+      "is_target": false,
+      "per_position_cosines": [
+        0.911499559879303,
+        0.9235982894897461,
+        0.9191275238990784,
+        0.9187067747116089,
+        0.9192277789115906,
+        0.9229525923728943,
+        0.9164180755615234,
+        0.9223605990409851
+      ],
+      "best_position_cosine": 0.9235982894897461,
+      "best_position_idx": 1,
+      "best_position_token": "e",
+      "mean_position_cosine": 0.919236421585083,
+      "last_position_cosine": 0.9353922009468079,
+      "position_labels": [
+        "Pa",
+        "e",
+        "\u2581weather",
+        "\u2581bureau",
+        "\u2581weather",
+        "\u2581aboard",
+        "\u2581preseason",
+        "\u2581Thursday"
+      ],
+      "positions": [
+        186,
+        188,
+        207,
+        208,
+        217,
+        388,
+        477,
+        508
+      ]
+    },
+    "porridge_W370": {
+      "query": "porridge",
+      "window": "W370",
+      "is_target": false,
+      "per_position_cosines": [
+        0.944481372833252,
+        0.9508092403411865,
+        0.9470769762992859,
+        0.9500623345375061,
+        0.9465274214744568,
+        0.939835786819458,
+        0.9511451721191406,
+        0.9516078233718872
+      ],
+      "best_position_cosine": 0.9516078233718872,
+      "best_position_idx": 7,
+      "best_position_token": "8",
+      "mean_position_cosine": 0.9476932883262634,
+      "last_position_cosine": 0.9502590894699097,
+      "position_labels": [
+        "Ll",
+        "MODE",
+        "\u2581AUTO",
+        "i",
+        "\u2581h",
+        "F",
+        "6",
+        "8"
+      ],
+      "positions": [
+        85,
+        216,
+        220,
+        223,
+        263,
+        399,
+        414,
+        478
+      ]
+    },
+    "porridge_W170": {
+      "query": "porridge",
+      "window": "W170",
+      "is_target": true,
+      "per_position_cosines": [
+        0.9472538828849792,
+        0.9434440732002258,
+        0.9509960412979126,
+        0.9544928073883057,
+        0.9534244537353516,
+        0.9444248676300049,
+        0.9478079080581665,
+        0.9509801864624023
+      ],
+      "best_position_cosine": 0.9544928073883057,
+      "best_position_idx": 3,
+      "best_position_token": "0",
+      "mean_position_cosine": 0.949103057384491,
+      "last_position_cosine": 0.9540786743164062,
+      "position_labels": [
+        "d",
+        "\u2581Ald",
+        "contest",
+        "0",
+        "}_",
+        "\u2581m",
+        "Page",
+        "\u2581_"
+      ],
+      "positions": [
+        213,
+        217,
+        220,
+        235,
+        328,
+        378,
+        400,
+        411
+      ]
+    },
+    "porridge_W169": {
+      "query": "porridge",
+      "window": "W169",
+      "is_target": false,
+      "per_position_cosines": [
+        0.9359017610549927,
+        0.9496471285820007,
+        0.9427716732025146,
+        0.9435871243476868,
+        0.9448607563972473,
+        0.9474106431007385,
+        0.9425231218338013,
+        0.9473305344581604
+      ],
+      "best_position_cosine": 0.9496471285820007,
+      "best_position_idx": 1,
+      "best_position_token": "e",
+      "mean_position_cosine": 0.9442540407180786,
+      "last_position_cosine": 0.9539202451705933,
+      "position_labels": [
+        "Pa",
+        "e",
+        "\u2581weather",
+        "\u2581bureau",
+        "\u2581weather",
+        "\u2581aboard",
+        "\u2581preseason",
+        "\u2581Thursday"
+      ],
+      "positions": [
+        186,
+        188,
+        207,
+        208,
+        217,
+        388,
+        477,
+        508
+      ]
+    },
+    "weather_W370": {
+      "query": "weather",
+      "window": "W370",
+      "is_target": false,
+      "per_position_cosines": [
+        0.9400079846382141,
+        0.9451056718826294,
+        0.9418379664421082,
+        0.9446349740028381,
+        0.9416033029556274,
+        0.9354045987129211,
+        0.9469250440597534,
+        0.9473292827606201
+      ],
+      "best_position_cosine": 0.9473292827606201,
+      "best_position_idx": 7,
+      "best_position_token": "8",
+      "mean_position_cosine": 0.9428560733795166,
+      "last_position_cosine": 0.9511685967445374,
+      "position_labels": [
+        "Ll",
+        "MODE",
+        "\u2581AUTO",
+        "i",
+        "\u2581h",
+        "F",
+        "6",
+        "8"
+      ],
+      "positions": [
+        85,
+        216,
+        220,
+        223,
+        263,
+        399,
+        414,
+        478
+      ]
+    },
+    "weather_W170": {
+      "query": "weather",
+      "window": "W170",
+      "is_target": false,
+      "per_position_cosines": [
+        0.943869411945343,
+        0.9392645359039307,
+        0.9447391629219055,
+        0.9488369822502136,
+        0.9488394260406494,
+        0.9400216937065125,
+        0.943213701248169,
+        0.9460912942886353
+      ],
+      "best_position_cosine": 0.9488394260406494,
+      "best_position_idx": 4,
+      "best_position_token": "}_",
+      "mean_position_cosine": 0.944359540939331,
+      "last_position_cosine": 0.9546737670898438,
+      "position_labels": [
+        "d",
+        "\u2581Ald",
+        "contest",
+        "0",
+        "}_",
+        "\u2581m",
+        "Page",
+        "\u2581_"
+      ],
+      "positions": [
+        213,
+        217,
+        220,
+        235,
+        328,
+        378,
+        400,
+        411
+      ]
+    },
+    "weather_W169": {
+      "query": "weather",
+      "window": "W169",
+      "is_target": true,
+      "per_position_cosines": [
+        0.9310116767883301,
+        0.9447470903396606,
+        0.9397792816162109,
+        0.9416190385818481,
+        0.9424469470977783,
+        0.9447399973869324,
+        0.9380618929862976,
+        0.9429507255554199
+      ],
+      "best_position_cosine": 0.9447470903396606,
+      "best_position_idx": 1,
+      "best_position_token": "e",
+      "mean_position_cosine": 0.940669596195221,
+      "last_position_cosine": 0.9555597901344299,
+      "position_labels": [
+        "Pa",
+        "e",
+        "\u2581weather",
+        "\u2581bureau",
+        "\u2581weather",
+        "\u2581aboard",
+        "\u2581preseason",
+        "\u2581Thursday"
+      ],
+      "positions": [
+        186,
+        188,
+        207,
+        208,
+        217,
+        388,
+        477,
+        508
+      ]
+    }
+  },
+  "exp2": {
+    "zarkov_city": {
+      "target_store": "zarkov",
+      "best_position_store": "kelvara",
+      "best_position_cosine": 0.951911211013794,
+      "store_max": {
+        "zarkov": 0.9497487545013428,
+        "strand": 0.9486778974533081,
+        "kelvara": 0.951911211013794
+      },
+      "store_mean": {
+        "zarkov": 0.9386811256408691,
+        "strand": 0.9374662637710571,
+        "kelvara": 0.9395971298217773
+      },
+      "ranked_stores": [
+        [
+          "kelvara",
+          0.951911211013794
+        ],
+        [
+          "zarkov",
+          0.9497487545013428
+        ],
+        [
+          "strand",
+          0.9486778974533081
+        ]
+      ],
+      "correct": false,
+      "margin": 1.0022768721750908
+    },
+    "strand_city": {
+      "target_store": "strand",
+      "best_position_store": "kelvara",
+      "best_position_cosine": 0.9541695713996887,
+      "store_max": {
+        "zarkov": 0.9520198106765747,
+        "strand": 0.9515090584754944,
+        "kelvara": 0.9541695713996887
+      },
+      "store_mean": {
+        "zarkov": 0.9412626028060913,
+        "strand": 0.9403531551361084,
+        "kelvara": 0.942395031452179
+      },
+      "ranked_stores": [
+        [
+          "kelvara",
+          0.9541695713996887
+        ],
+        [
+          "zarkov",
+          0.9520198106765747
+        ],
+        [
+          "strand",
+          0.9515090584754944
+        ]
+      ],
+      "correct": false,
+      "margin": 1.002258105029964
+    },
+    "kelvara_town": {
+      "target_store": "kelvara",
+      "best_position_store": "kelvara",
+      "best_position_cosine": 0.9513533115386963,
+      "store_max": {
+        "zarkov": 0.948799192905426,
+        "strand": 0.9483658671379089,
+        "kelvara": 0.9513533115386963
+      },
+      "store_mean": {
+        "zarkov": 0.938861608505249,
+        "strand": 0.9377239942550659,
+        "kelvara": 0.9395845532417297
+      },
+      "ranked_stores": [
+        [
+          "kelvara",
+          0.9513533115386963
+        ],
+        [
+          "zarkov",
+          0.948799192905426
+        ],
+        [
+          "strand",
+          0.9483658671379089
+        ]
+      ],
+      "correct": true,
+      "margin": 1.0026919485728576
+    }
+  },
+  "exp3": {
+    "porridge": {
+      "target": "W170",
+      "per_position_max_rank": 6,
+      "per_position_mean_rank": 8,
+      "last_position_rank": 14,
+      "per_position_max_top5": [
+        [
+          "W465",
+          0.9551736116409302
+        ],
+        [
+          "W420",
+          0.9550678133964539
+        ],
+        [
+          "W195",
+          0.9549840688705444
+        ],
+        [
+          "W645",
+          0.9546453952789307
+        ],
+        [
+          "W285",
+          0.9546440243721008
+        ]
+      ],
+      "last_position_top5": [
+        [
+          "W345",
+          0.9596301317214966
+        ],
+        [
+          "W555",
+          0.9594219326972961
+        ],
+        [
+          "W480",
+          0.9580276012420654
+        ],
+        [
+          "W075",
+          0.9568737149238586
+        ],
+        [
+          "W240",
+          0.9565737843513489
+        ]
+      ],
+      "target_per_pos_max_cosine": 0.9544926881790161,
+      "target_last_cosine": 0.9540786743164062,
+      "improved": true
+    },
+    "baseball": {
+      "target": "W169",
+      "per_position_max_rank": 33,
+      "per_position_mean_rank": 40,
+      "last_position_rank": 17,
+      "per_position_max_top5": [
+        [
+          "W645",
+          0.9522342681884766
+        ],
+        [
+          "W315",
+          0.9507863521575928
+        ],
+        [
+          "W465",
+          0.9507597088813782
+        ],
+        [
+          "W390",
+          0.9507128000259399
+        ],
+        [
+          "W420",
+          0.9505428075790405
+        ]
+      ],
+      "last_position_top5": [
+        [
+          "W345",
+          0.9598674178123474
+        ],
+        [
+          "W555",
+          0.9583911299705505
+        ],
+        [
+          "W480",
+          0.9582047462463379
+        ],
+        [
+          "W075",
+          0.9575916528701782
+        ],
+        [
+          "W240",
+          0.9566124081611633
+        ]
+      ],
+      "target_per_pos_max_cosine": 0.9461748600006104,
+      "target_last_cosine": 0.9545094966888428,
+      "improved": false
+    },
+    "landing": {
+      "target": "W370",
+      "per_position_max_rank": 26,
+      "per_position_mean_rank": 15,
+      "last_position_rank": 45,
+      "per_position_max_top5": [
+        [
+          "W195",
+          0.931153416633606
+        ],
+        [
+          "W285",
+          0.9311081171035767
+        ],
+        [
+          "W465",
+          0.9303959608078003
+        ],
+        [
+          "W450",
+          0.930134654045105
+        ],
+        [
+          "W555",
+          0.9297950863838196
+        ]
+      ],
+      "last_position_top5": [
+        [
+          "W345",
+          0.9404867887496948
+        ],
+        [
+          "W555",
+          0.9386394023895264
+        ],
+        [
+          "W075",
+          0.9371607303619385
+        ],
+        [
+          "W315",
+          0.9369493722915649
+        ],
+        [
+          "W645",
+          0.9359753131866455
+        ]
+      ],
+      "target_per_pos_max_cosine": 0.9283168315887451,
+      "target_last_cosine": 0.9314830899238586,
+      "improved": true
+    },
+    "weather": {
+      "target": "W169",
+      "per_position_max_rank": 47,
+      "per_position_mean_rank": 38,
+      "last_position_rank": 11,
+      "per_position_max_top5": [
+        [
+          "W465",
+          0.9511588215827942
+        ],
+        [
+          "W195",
+          0.9509878158569336
+        ],
+        [
+          "W450",
+          0.9505097270011902
+        ],
+        [
+          "W420",
+          0.9504490494728088
+        ],
+        [
+          "W285",
+          0.9501794576644897
+        ]
+      ],
+      "last_position_top5": [
+        [
+          "W345",
+          0.9605369567871094
+        ],
+        [
+          "W075",
+          0.957879364490509
+        ],
+        [
+          "W555",
+          0.9572047591209412
+        ],
+        [
+          "W480",
+          0.9568966627120972
+        ],
+        [
+          "W645",
+          0.9567212462425232
+        ]
+      ],
+      "target_per_pos_max_cosine": 0.9447471499443054,
+      "target_last_cosine": 0.9555597901344299,
+      "improved": false
+    },
+    "news": {
+      "target": "W169",
+      "per_position_max_rank": 45,
+      "per_position_mean_rank": 40,
+      "last_position_rank": 14,
+      "per_position_max_top5": [
+        [
+          "W420",
+          0.9521708488464355
+        ],
+        [
+          "W465",
+          0.9521450400352478
+        ],
+        [
+          "W645",
+          0.9517422318458557
+        ],
+        [
+          "W195",
+          0.9516113996505737
+        ],
+        [
+          "W240",
+          0.9514284133911133
+        ]
+      ],
+      "last_position_top5": [
+        [
+          "W345",
+          0.9649670720100403
+        ],
+        [
+          "W555",
+          0.9621149301528931
+        ],
+        [
+          "W075",
+          0.9614036083221436
+        ],
+        [
+          "W315",
+          0.9609476327896118
+        ],
+        [
+          "W000",
+          0.9607118368148804
+        ]
+      ],
+      "target_per_pos_max_cosine": 0.9468764066696167,
+      "target_last_cosine": 0.9594800472259521,
+      "improved": false
+    }
+  },
+  "exp5": {
+    "porridge": {
+      "target": "W170",
+      "centred_rank": 21,
+      "raw_per_position_rank": 6,
+      "last_position_rank": 14,
+      "centred_top5": [
+        [
+          "W540",
+          0.3296026289463043
+        ],
+        [
+          "W360",
+          0.31904682517051697
+        ],
+        [
+          "W465",
+          0.30743682384490967
+        ],
+        [
+          "W675",
+          0.29409778118133545
+        ],
+        [
+          "W645",
+          0.2877119481563568
+        ]
+      ]
+    },
+    "baseball": {
+      "target": "W169",
+      "centred_rank": 19,
+      "raw_per_position_rank": 33,
+      "last_position_rank": 17,
+      "centred_top5": [
+        [
+          "W465",
+          0.26631125807762146
+        ],
+        [
+          "W540",
+          0.26241612434387207
+        ],
+        [
+          "W360",
+          0.2614450454711914
+        ],
+        [
+          "W645",
+          0.24296805262565613
+        ],
+        [
+          "W510",
+          0.2390044629573822
+        ]
+      ]
+    },
+    "landing": {
+      "target": "W370",
+      "centred_rank": 20,
+      "raw_per_position_rank": 26,
+      "last_position_rank": 45,
+      "centred_top5": [
+        [
+          "W540",
+          0.4124453365802765
+        ],
+        [
+          "W360",
+          0.40603727102279663
+        ],
+        [
+          "W465",
+          0.3884415626525879
+        ],
+        [
+          "W510",
+          0.36156409978866577
+        ],
+        [
+          "W000",
+          0.359678715467453
+        ]
+      ]
+    },
+    "weather": {
+      "target": "W169",
+      "centred_rank": 17,
+      "raw_per_position_rank": 47,
+      "last_position_rank": 11,
+      "centred_top5": [
+        [
+          "W540",
+          0.35438817739486694
+        ],
+        [
+          "W360",
+          0.33740586042404175
+        ],
+        [
+          "W465",
+          0.33362242579460144
+        ],
+        [
+          "W675",
+          0.3058948218822479
+        ],
+        [
+          "W510",
+          0.3001174032688141
+        ]
+      ]
+    },
+    "news": {
+      "target": "W169",
+      "centred_rank": 22,
+      "raw_per_position_rank": 45,
+      "last_position_rank": 14,
+      "centred_top5": [
+        [
+          "W540",
+          0.29685279726982117
+        ],
+        [
+          "W360",
+          0.28039443492889404
+        ],
+        [
+          "W465",
+          0.27021345496177673
+        ],
+        [
+          "W645",
+          0.26528456807136536
+        ],
+        [
+          "W510",
+          0.26080766320228577
+        ]
+      ]
+    }
+  },
+  "landing_improved": true
+}

@@ -1,0 +1,216 @@
+{
+  "experiment": "attention-aggregate-routing",
+  "timestamp": "2026-03-21T15:38:48",
+  "stores": {
+    "A": 40,
+    "B": 32,
+    "C": 44,
+    "total": 116
+  },
+  "results": {
+    "Zarkov city": {
+      "correct_store": 0,
+      "h4_argmax_store": 0,
+      "h4_argmax_correct": true,
+      "h4_agg_winner": 0,
+      "h4_agg_correct": true,
+      "h4_store_totals": [
+        0.19072216749191284,
+        0.1173134446144104,
+        0.14704561233520508
+      ],
+      "multi_agg_winner": 0,
+      "multi_agg_correct": true,
+      "multi_head_store_totals": [
+        0.5412731170654297,
+        0.5227846503257751,
+        0.5036973729729652
+      ],
+      "all_agg_winner": 0,
+      "all_agg_correct": true,
+      "all_head_store_totals": [
+        0.6893002736066762,
+        0.630360823136698,
+        0.6638668957020855
+      ],
+      "head_argmax_winners": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "head_agg_winners": [
+        2,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "attention_budget": {
+        "stored_per_head": [
+          0.2275390625,
+          0.1748046875,
+          0.32421875,
+          0.28515625,
+          0.455078125,
+          0.5,
+          0.000743865966796875,
+          0.0128173828125
+        ],
+        "query_per_head": [
+          0.77734375,
+          0.8203125,
+          0.671875,
+          0.70703125,
+          0.53515625,
+          0.4921875,
+          1.0,
+          0.98828125
+        ]
+      }
+    },
+    "Director surname": {
+      "correct_store": 1,
+      "h4_argmax_store": 2,
+      "h4_argmax_correct": false,
+      "h4_agg_winner": 1,
+      "h4_agg_correct": true,
+      "h4_store_totals": [
+        0.17825506627559662,
+        0.20371627807617188,
+        0.13535597920417786
+      ],
+      "multi_agg_winner": 1,
+      "multi_agg_correct": true,
+      "multi_head_store_totals": [
+        0.5191828981041908,
+        0.8188170194625854,
+        0.5187893267720938
+      ],
+      "all_agg_winner": 1,
+      "all_agg_correct": true,
+      "all_head_store_totals": [
+        0.6470559952972508,
+        0.9480135560074814,
+        0.6494094797817525
+      ],
+      "head_argmax_winners": [
+        1,
+        0,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "head_agg_winners": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "attention_budget": {
+        "stored_per_head": [
+          0.23828125,
+          0.1376953125,
+          0.431640625,
+          0.42578125,
+          0.515625,
+          0.48046875,
+          0.000667572021484375,
+          0.01116943359375
+        ],
+        "query_per_head": [
+          0.75390625,
+          0.86328125,
+          0.56640625,
+          0.57421875,
+          0.484375,
+          0.515625,
+          0.99609375,
+          0.984375
+        ]
+      }
+    },
+    "Teleportation town": {
+      "correct_store": 2,
+      "h4_argmax_store": 0,
+      "h4_argmax_correct": false,
+      "h4_agg_winner": 0,
+      "h4_agg_correct": false,
+      "h4_store_totals": [
+        0.2189422845840454,
+        0.09787845611572266,
+        0.17179641127586365
+      ],
+      "multi_agg_winner": 2,
+      "multi_agg_correct": true,
+      "multi_head_store_totals": [
+        0.552994042634964,
+        0.5020956993103027,
+        0.6198638137429953
+      ],
+      "all_agg_winner": 2,
+      "all_agg_correct": true,
+      "all_head_store_totals": [
+        0.6696464258984633,
+        0.6100890084853745,
+        0.754062224052177
+      ],
+      "head_argmax_winners": [
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "head_agg_winners": [
+        2,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "attention_budget": {
+        "stored_per_head": [
+          0.171875,
+          0.1611328125,
+          0.349609375,
+          0.3828125,
+          0.48828125,
+          0.453125,
+          0.00119781494140625,
+          0.0238037109375
+        ],
+        "query_per_head": [
+          0.82421875,
+          0.83984375,
+          0.64453125,
+          0.60546875,
+          0.51171875,
+          0.53515625,
+          1.0,
+          0.96484375
+        ]
+      }
+    }
+  }
+}
